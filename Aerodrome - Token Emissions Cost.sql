@@ -5,7 +5,7 @@ WITH weekly_emissions AS (
     FROM erc20_base.evt_Transfer
     WHERE contract_address = from_hex('0x940181a94A35A4569E4529A3CDfB74e38FD98631') -- Скорректированный точный адрес токена AERO на Base
       AND "from" = from_hex('0x0000000000000000000000000000000000000000') -- Фильтруем чистый минт (создание токенов из пустоты)
-      AND evt_block_time > NOW() - INTERVAL '180' DAY -- Берем последние 12 месяца
+      AND evt_block_time > NOW() - INTERVAL '180' DAY -- Берем последние 6 месяцев
     GROUP BY 1
 ),
 weekly_prices AS (
