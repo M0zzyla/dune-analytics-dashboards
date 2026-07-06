@@ -1,4 +1,4 @@
-Markdown
+
 # Dune Analytics: Economic Efficiency Model — Aerodrome DEX
 This repository contains SQL queries for analyzing token emission costs, projected fee revenue, and net profit.
 
